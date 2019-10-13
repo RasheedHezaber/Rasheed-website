@@ -5,7 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/kvass.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:100,300,400,500,,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <div class="wrapper-fluid">
+        <div class="col-fl-md-12">
+          <div class="col-fl-md-3">
+            <div class="logo">
+              <h1>LOGO</h1>
+            </div>
+          </div>
+          <div class="col-fl-md-9">
+            <nav class="navigation">
+              <button
+                class="icon-reorder"
+                aria-expanded="false"
+                aria-controls="menu"
+              ></button>
+              <ul id="menu" hidden>
+                <li><a href="#full-page">Home</a></li>
+                <li><a href="#genre">Genres</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#companies">Companies</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </nav>
+            <nav class="main-nav">
+              <ul>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-fl-md-12">
+            <div class="hero-text centering t-center">
+              <h1 class="t-light">
+                YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES
+              </h1>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Possimus pariatur unde magnam adipisci accusamus? Repudiandae
+                vitae vel dicta aliquid, dignissimos qui veniam. Adipisci sint
+                neque optio libero commodi quidem nobis.
+              </p>
+              <a href="">button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script type="text/javascript">
+      const toggleMenu = document.querySelector(".navigation button");
+      const menu = document.querySelector(".navigation ul");
+      toggleMenu.addEventListener("click", function() {
+        const open = JSON.parse(toggleMenu.getAttribute("aria-expanded"));
+        toggleMenu.setAttribute("aria-expanded", !open);
+        menu.hidden = !menu.hidden;
+      });
+    </script>
   </body>
 </html>

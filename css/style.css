@@ -1,0 +1,128 @@
+body {
+  font-family: "Merriweather Sans";
+}
+
+header {
+  background-image: url(https://images.unsplash.com/photo-1564507534080-5d4edb02e7c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+header:before {
+  background-color: rgba(87, 72, 62, 0.67);
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  position: absolute;
+}
+
+.logo {
+}
+
+.logo h1 {
+  color: #d3cecb;
+  position: relative;
+  z-index: 1000;
+  font-size: 1.7em;
+}
+
+.main-nav {
+  visibility: visible;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  margin: 1% 3%;
+  position: relative;
+  left: 10em;
+  color: #d3cecb;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.navigation {
+  position: relative;
+  z-index: 1000;
+  display: none;
+  background-color: rgba(87, 72, 62, 0.67);
+}
+
+.navigation button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border-style: hidden;
+  color: #f4623a;
+  font-size: 2em;
+}
+
+#menu {
+  list-style: none;
+}
+
+#menu li {
+  width: 100%;
+  padding: 1em;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #d3cecb;
+}
+
+.hero-text {
+}
+
+.hero-text h1 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.hero-text p {
+}
+
+.hero-text a {
+}
+
+hr {
+  border-bottom-color: #f4623a;
+  border-bottom-width: 4px;
+  width: 9%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 2em;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+}
+
+/* media queries */
+
+@media (max-width: 992px) {
+  .main-nav {
+    visibility: hidden;
+  }
+
+  .navigation {
+    position: relative;
+    z-index: 1000;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation button {
+    position: absolute;
+    top: -56px;
+    right: 0;
+  }
+}
